@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа — TimeLux</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Оформление заказа</h1>
+    <div id="product-info">
+      <h2 id="product-name">Товар</h2>
+      <p id="product-price"></p>
+    </div>
+
+    <form id="order-form">
+      <label>Ваше имя<br>
+        <input type="text" name="name" id="name" required>
+      </label>
+
+      <label>Телефон<br>
+        <input type="tel" name="phone" id="phone" required>
+      </label>
+
+      <label>Адрес доставки<br>
+        <input type="text" name="address" id="address" required>
+      </label>
+
+      <fieldset>
+        <legend>Способ оплаты</legend>
+        <label><input type="radio" name="payment" value="Наличные" checked> Наличные</label>
+        <label><input type="radio" name="payment" value="Картой"> Картой</label>
+      </fieldset>
+
+      <input type="hidden" id="product" name="product">
+      <input type="hidden" id="price" name="price">
+
+      <div style="margin-top:1rem;">
+        <button class="button button--primary" type="submit">Отправить заказ</button>
+      </div>
+    </form>
+
+    <p id="status" style="margin-top:1rem;"></p>
+  </div>
+
+  <script src="js/order.js"></script>
+</body>
+</html>

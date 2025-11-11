@@ -535,6 +535,171 @@ a {
     box-shadow: 0 12px 30px rgba(43, 42, 51, 0.08);
 }
 
+.order-page {
+    background-color: #f5f5f7;
+}
+
+.order-hero {
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1524592767084-43f6d9c2a5d2?auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 4.5rem 0;
+    overflow: hidden;
+}
+
+.order-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.65) 100%);
+}
+
+.order-hero__content {
+    position: relative;
+    display: grid;
+    gap: 1.25rem;
+    max-width: 640px;
+}
+
+.order-hero__tag {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #b28745;
+    font-weight: 600;
+}
+
+.order-hero__title {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.1rem, 4vw, 3rem);
+}
+
+.order-hero__subtitle {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.order-section {
+    padding: 4rem 0 5rem;
+}
+
+.order-section__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.order-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2.25rem;
+    box-shadow: 0 18px 45px rgba(30, 36, 56, 0.1);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.order-card__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 1.25rem;
+    border-radius: 999px;
+    background-color: rgba(178, 135, 69, 0.12);
+    color: #b28745;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.order-card__title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    color: #111;
+}
+
+.order-card__price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #212531;
+}
+
+.order-card__note {
+    color: #555;
+    line-height: 1.7;
+}
+
+.order-card--form {
+    gap: 1.75rem;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.form-field label {
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.form-field input {
+    border: 1px solid rgba(33, 37, 49, 0.15);
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: #f9f9fb;
+}
+
+.form-field input:focus {
+    border-color: rgba(178, 135, 69, 0.6);
+    box-shadow: 0 0 0 4px rgba(178, 135, 69, 0.15);
+    outline: none;
+    background-color: #fff;
+}
+
+.form-fieldset {
+    border: 1px solid rgba(33, 37, 49, 0.12);
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+    background-color: #f9f9fb;
+}
+
+.form-fieldset legend {
+    font-weight: 600;
+    padding: 0 0.4rem;
+    color: #1f1f1f;
+}
+
+.form-radio {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.form-radio input {
+    accent-color: #b28745;
+    transform: scale(1.2);
+}
+
+.order-card__submit {
+    width: 100%;
+}
+
+.order-status {
+    min-height: 1.4rem;
+    font-size: 0.95rem;
+    color: #2f3245;
+}
+
 .footer {
     background-color: #212531;
     color: rgba(255, 255, 255, 0.75);
@@ -640,5 +805,18 @@ a {
     .contacts__map iframe {
         min-height: 260px;
     }
+
+    .order-card {
+        padding: 1.75rem;
+    }
+
+    .order-hero {
+        padding: 3.5rem 0;
+    }
+
+    .order-card__title {
+        font-size: 1.6rem;
+    }
 }
+
 
